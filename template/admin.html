@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>User Data</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[1] }}</td>  <!-- user[1] = name -->
+            <td>{{ user[2] }}</td>  <!-- user[2] = email -->
+            <td>{{ user[3] }}</td>  <!-- user[3] = age -->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
